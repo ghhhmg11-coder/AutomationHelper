@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="#222222"
+    android:padding="10dp" android:elevation="10dp">
+
+    <LinearLayout android:id="@+id/panel_drag_header"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:background="#333333" android:padding="6dp">
+
+        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="التحكم العائم الذكي"
+            android:textColor="#03DAC6" android:textStyle="bold" android:textSize="12sp"/>
+
+        <Button android:id="@+id/btn_close_panel"
+            android:layout_width="wrap_content" android:layout_height="30dp"
+            android:text="إغلاق" android:backgroundTint="#CF6679"
+            android:textSize="9sp" android:padding="2dp"/>
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:layout_marginTop="8dp" android:gravity="center">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="حالة الرد والتنفيذ التلقائي:"
+            android:textColor="#FFFFFF" android:textSize="12sp" android:layout_marginEnd="8dp"/>
+
+        <Switch android:id="@+id/sw_toggle_automation"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:thumbTint="#03DAC6" android:trackTint="#555555"/>
+    </LinearLayout>
+</LinearLayout>
